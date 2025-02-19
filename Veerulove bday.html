@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffccff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #ff3399;
+        }
+        .surprise {
+            display: none;
+            margin-top: 20px;
+        }
+        img {
+            cursor: pointer;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .hidden-message {
+            display: none;
+            font-size: 18px;
+            color: #ff3399;
+            margin-top: 15px;
+        }
+        .heart-animation {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday My Love ❤️</h1>
+        <p>Click on the gift below for a surprise!</p>
+        <img src="./2.jpg" alt="Gift" onclick="showSurprise()">
+        
+        <div id="surpriseBox" class="surprise">
+            <h2>Surprise! 🎉</h2>
+            <p>My love, you are the most precious person in my life. Wishing you a day filled with love, laughter, and endless joy. 💖</p>
+            <p>Scroll down for more surprises!</p>
+            <button onclick="showMoreSurprises()">Click for another surprise!</button>
+        </div>
+        
+        <div id="moreSurprises" class="hidden-message">
+            <p>✨ You light up my world every single day! ✨</p>
+            <p>🎶 Here's a special song for you: <a href="https://youtu.be/8cVOAFFTcv8?si=zmBMz9LKU_I83a3o" target="_blank">Click Here</a> 🎵</p>
+            <p>💌 A love letter just for you: "Every moment with you is magical, and I cherish you more than words can express." 💕</p>
+            <p class="heart-animation">❤️❤️❤️</p>
+            <p>🎂 Click below for a birthday cake surprise!</p>
+            <button onclick="showCake()">Show Cake 🎂</button>
+            <div id="cakeSurprise" class="hidden-message">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/happy-birthday-1238510_1280.jpg" alt="Birthday Cake" width="300">
+                <p>Wishing you the sweetest birthday ever! 🎂🎈</p>
+            </div>
+            <p>💖 Click below for a photo memory surprise!</p>
+            <button onclick="showPhotoMemory()">Show Memories 📸</button>
+            <div id="photoMemory" class="hidden-message">
+                <img src="https://cdn.pixabay.com/photo/2015/07/17/13/44/love-849290_1280.jpg" alt="Memories" width="300">
+                <p>Every moment with you is a beautiful memory. ❤️</p>
+            </div>
+            <a  href="./Image.html">Click Here</a>
+            <p>🌟 Click below for a special wish video!</p>
+            <button onclick="showVideo()">Play Video 🎥</button>
+            <div id="videoSurprise" class="hidden-message">
+                <iframe width="300" height="200" src="./WhatsApp Video 2025-02-19 at 12.56.58 PM.mp4" title="Happy Birthday Song"></iframe>
+                <p>A song that reminds me of you! 🎶</p>
+                <a href="./feelings.html">Click Here to see something</a>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSurprise() {
+            document.getElementById("surpriseBox").style.display = "block";
+        }
+        function showMoreSurprises() {
+            document.getElementById("moreSurprises").style.display = "block";
+        }
+        function showCake() {
+            document.getElementById("cakeSurprise").style.display = "block";
+        }
+        function showPhotoMemory() {
+            document.getElementById("photoMemory").style.display = "block";
+        }
+        function showVideo() {
+            document.getElementById("videoSurprise").style.display = "block";
+        }
+    </script>
+</body>
+</html>

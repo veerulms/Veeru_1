@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 22px;
+            color: #444;
+            margin: 10px;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff3366;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: opacity 1s ease-in-out;
+        }
+        img {
+            width: 350px;
+            border-radius: 15px;
+            margin: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌹 Once again Happy Birthday My Love! ❤️</h1>
+    <p>Click the heart to see a special message! 💌</p>
+
+    <!-- Clickable Image -->
+    <img src="./2.jpg" alt="Beautiful Rose" onclick="showMessage()">
+    
+    <!-- Hidden Message -->
+    <p id="message" class="hidden-message">💖 Happy Birthday My Love! 💖<br>
+        You are the light of my life, and I am so lucky to have you. 🥰🎂💝</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
